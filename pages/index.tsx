@@ -203,7 +203,7 @@ const Home: NextPage = ({ particles }: any) => {
         <meta charSet='utf-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover, maximum-scale=6'/>
-        <title>Ludicrous</title>
+        <title>LBHS Proxy</title>
         <link rel='manifest' href='/manifest.json' />
         <link href='/icons/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
         <link href='/icons/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
@@ -215,11 +215,9 @@ const Home: NextPage = ({ particles }: any) => {
         <div id={styles['main-page-content']}>
           
           <div onClick={Apps} className={styles["main-page-apps-init"]} id="apps-init"><IoAppsOutline /></div>
-          <div onClick={Games} className={styles["main-page-games-init"]} id="games-init"><IoGameControllerOutline /></div>
-          <div className={styles["main-page-about-init"]} id="ab-cloak" onClick={Settings}><IoSettingsOutline /></div>
 
           <div id={styles["main-page-init"]}>
-            <h1 className={styles["main-title"]}><span>Ludicrous</span> <FaGithub style={{"cursor": "pointer"}} onClick={(e) => {window.open('https://github.com/TitaniumNetwork-Dev/Ludicrous');}} /></h1>
+            <h1 className={styles["main-title"]}><span>Selenite 2 | LBHS's Proxy</h1>
             <h2 className={styles["main-desc"]}>Surf the Unblo​cked Web</h2>
             <form method="GET" id={styles.form} action="/route">
               <input name="query" id={styles["main-input"]} onKeyDown={(event: any) => event.key == "Enter" ? (event.target as any)?.parentNode!.requestSubmit() : null} placeholder="Enter URL or Search Query" autoComplete="off" />
